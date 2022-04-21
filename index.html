@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="KOR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- 모바일은 화면크기를 자동으로 줄여서 표현하는 방식. 1:1사이즈의 대응을 위하여 viewport코드를 추가한다 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BTS | BIGHIT MUSIC</title>
+    <link rel="shortcut icon" href="bts_fav.ico" type="image/x-icon">
     <!-- 제이쿼리 설치 -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
@@ -30,7 +31,7 @@
     * { margin: 0; padding: 0; list-style: none; }
     a { text-decoration: none; color: inherit;}
     body,html{width: 100%; height: 100%;}
-    #main{width: 100%; height: 100%; position: relative;}
+    #main{width: 100%; height: 100%; position: relative; overflow: hidden;}
     #main_slide{width: 500%; height: 100%; position: absolute; cursor: pointer;}
     #main_slide::after{content: ""; display: block; clear: both;}
     #main_slide>li{width: 20%; height: 100%; float: left; position: relative;}
@@ -63,7 +64,7 @@
     .footer_select_menu_sub>li{width: 100%; padding: 5px 0; color: #ddd; background-color: #333; text-align: center; border-bottom: 1px solid #555; }
     .footer_select_menu_sub>li:last-child{border-bottom: none;}
     .footer_select_menu_sub>li:hover{background-color: #000;color: #fff;}
-    #footer_right{float: right; color: #999; text-align: right; margin-right: 20px; margin-top: 11px;}
+    #footer_right{float: right; color: #999; text-align: right; margin-right: 20px; }
     #footer_right>h6{font-size: 12px; font-weight: 400; line-height: 20px; }
     #footer_right>p{font-size: 12px; line-height: 15px; width: 70%; float: right;}
     .mobile_slide_img{width: 94%; height: 91.5vw; position: absolute; left: 0; right: 0; top: 20%; bottom: 0; margin: auto; box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); }
@@ -120,7 +121,7 @@
         footer{position: fixed; height: 62px;}
         body{height: 100%;}
         #footer_select_menu{position: absolute;}
-        #footer_icon{float: left;}
+        #footer_icon{float: left; width: 20%;}
         #footer_icon>li{width: 16px; height: 16px; margin-right: 3px; float: left; display: block;}
         #footer_right{float: right; text-align: right;}
         #footer_right>p{width: 70%; float: right;}
@@ -144,7 +145,7 @@
         footer{position: fixed; height: 62px;}
         body{height: 100%;}
         #footer_select_menu{position: absolute;}
-        #footer_icon{float: left;}
+        #footer_icon{float: left; width: 20%;}
         #footer_icon>li{width: 22px; height: 22px; margin-right: 5px; float: left; display: block;}
         #footer_right{float: right; text-align: right;}
         #footer_right>p{width: 70%; float: right;}
